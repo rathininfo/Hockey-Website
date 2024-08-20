@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <!-- Google Manrope Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome Link  -->
+    <script src="https://kit.fontawesome.com/7472c29f3c.js" crossorigin="anonymous"></script>
+    <!-- Tailwind + DaisyUI CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize configuration Codes -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+            primary: 'rgb(255, 66, 64)',
+            secondary:'rgba(19, 19, 24, 0.6)',
+              },
+              fontFamily:{
+                Manrope: 'Manrope',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body class="font-Manrope">
+    <header class="w-11/12 mx-auto">
+        <!-- Nav Section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li class="text-secondary"><a>Home</a></li>
+                  <li class="text-secondary"><a>About</a></li>
+                <li class="text-secondary"><a>Pages</a></li>
+                <li class="text-secondary"><a>Blog</a></li>
+                <li class="text-secondary"><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="text-2xl font-extrabold md:text-4xl">Hockey<span class="text-primary">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 primary">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex gap-4">
+                <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+              <a class="btn bg-primary text-white font-bold">Button</a>
+            </div>
+          </div>
+          <!-- carrousel Section  -->
+          <div class="carousel w-full mt-12 relative">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png"class="w-full h-full" />
+              <div class=" flex gap-4 absolute left-10 bottom-5 justify-between">
+                <a href="#slide3" class="btn btn-circle bg-[black] text-white border-0">❮</a>
+                <a href="#slide2" class="btn btn-circle bg-[black] text-white border-0">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./Images/2.png"class="w-full h-full" />
+              <div class="flex gap-4 absolute left-10 bottom-5 justify-between">
+                <a href="#slide1" class="btn btn-circle bg-[black] text-white border-0">❮</a>
+                <a href="#slide3" class="btn btn-circle bg-[black] text-white border-0">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="./Images/3.png"class="w-full h-full" />
+              <div class="flex gap-4 absolute left-10 bottom-5 justify-between">
+                <a href="#slide2" class="btn btn-circle bg-[black] text-white border-0">❮</a>
+                <a href="#slide1" class="btn btn-circle bg-[black] text-white border-0">❯</a>
+              </div>
+            </div>
+            <div class="bg-secondary absolute bright-0 p-10 rounded-xl">
+                <h3 class="text-white font-bold z-10 text-base">Meet all the heroes from the field</h3>
+                <p class="text-sm text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+          </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
